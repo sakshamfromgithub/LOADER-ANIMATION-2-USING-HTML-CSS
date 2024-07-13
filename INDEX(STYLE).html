@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION - CSS BY SAKSHAM SHRIVASTAV</title>
+    <style>
+        body{
+            display: grid;
+            
+        }
+        .container{
+            height: 100px;
+            width: 100px;
+            place-self: center;
+            border: 5px solid rgba(44, 7, 7, 0.078);
+            border-radius: 400px;
+            display: flex;
+            position: relative;
+            top: 150px;
+            animation:width 1s linear 0s infinite   ;  
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+             /* animation: 4s linear 0s infinite alternate sun-rise; */
+        }
+        @keyframes width {
+            from{
+                /* height: 100px;
+                width: 100px; */
+                border-top: 5px dashed black;
+                border-bottom: 5px dashed black;
+            }
+            to{
+                /* height:500px;
+                width: 500px; */
+                border-top: 5px solid black;
+                border-bottom: 5px solid black;
+              transform: rotate(360deg);
+            }
+          
+        }
+        
+            
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
